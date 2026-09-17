@@ -11,6 +11,6 @@ The ACT model and training implementation are preserved from the source workspac
 
 ## Colab
 
-See [COLAB.md](COLAB.md). Install `requirements-colab.txt` and the package with `pip install -e . --no-deps`, download the dataset with `python scripts/download_dataset.py`, then run `configs/act_smoke.yaml`. Formal budget is deliberately unset until device profiling passes.
+See [COLAB.md](COLAB.md). Install `requirements-colab.txt` and the package with `pip install -e . --no-deps`, download the dataset with `python scripts/download_dataset.py`, then run `configs/act_smoke.yaml`. L4 profiling and recovery gates passed; formal seed-0 training started with batch 64, 2 workers and 40,000 updates. See reports/act/colab_validation_20260917.json.
 
 See [SPEC.md](SPEC.md), [PROGRESS.md](PROGRESS.md), and [EVALUATION.md](EVALUATION.md) for the experiment protocol. Historical links refer to the original Mini-WAM workspace, not results of this ACT release.

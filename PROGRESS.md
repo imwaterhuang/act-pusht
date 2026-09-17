@@ -1,5 +1,22 @@
 # Mini-WAM 当前交接状态
 
+## 最新云端状态：2026-09-17 23:49（UTC+8）
+
+ACT 已在 NVIDIA L4 上启动正式训练，初次观察超过 760 步，目标 40,000 步；尚未完成。
+新私有仓库为 https://github.com/imwaterhuang/act-pusht ，训练源码提交为 `53dddff105b664612bedcf150cbc1f1fd2542bb6`。
+发布副本位于 `outputs/act-pusht-publish/`，原工作区暂存内容保持原样。
+
+- 全部 206 回合、25,444 个有效窗口；批大小 64、2 个加载进程。
+- L4 实测约 0.0673 秒/步；正式预算约 100 遍全量数据，预热 500 步。
+- 每 1,000 步镜像检查点，每 5,000 步在原定 50 个随机开发场景上闭环选点。
+- 5 步短训练与从 Drive 恢复的完整状态逐项一致，检查点镜像哈希一致。
+- 64 窗口、300 步、beta=0 的诊断误差从 0.4998 降至 0.04673；正式 beta=10。
+- 预训练权重、真实 ACT 的 5 场景短闭环、best.pt 选取及镜像已通过。短闭环不代表正式成功率。
+- 正式镜像：`MyDrive/act-pusht-runs/act-seed0-20260917-l4/`。
+- 完整验证镜像：`MyDrive/act-pusht-runs/validation-20260917-154249/`。
+
+证据摘要见 [L4 云端验证](reports/act/colab_validation_20260917.json)。下文的本地阶段快照早于此次云端执行。
+
 更新：2026-09-17。当前进入 ACT（Action Chunking with Transformers，基于 Transformer 的动作分块）动作策略阶段。
 本轮只推进 ACT 的实现、训练、恢复和 Push-T 闭环评测；不加入 WAM（World Action Model，世界动作模型）或 Diffusion Policy（扩散策略）目标。
 

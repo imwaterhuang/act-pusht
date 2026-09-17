@@ -1,0 +1,68 @@
+{
+  "date_utc": "2026-09-17",
+  "repository": "https://github.com/imwaterhuang/act-pusht",
+  "notebook": "https://colab.research.google.com/drive/1YAk4p-ptP7bnXtL-MY7y9gCUndLPyXRh",
+  "evidence_origin": "Executed Colab outputs; full records and checkpoints mirrored to Drive",
+  "validation_directory": "/content/drive/MyDrive/act-pusht-runs/validation-20260917-154249",
+  "gpu": "NVIDIA L4",
+  "python": "3.13.15",
+  "pytorch": "2.11.0+cu128",
+  "episodes": 206,
+  "frames": 25650,
+  "valid_windows": 25444,
+  "local_tests_passed": 15,
+  "cloud_setup_marker": "ACT_SETUP_VERIFIED",
+  "profile": {
+    "batch_size": 64,
+    "num_workers": 2,
+    "data_seconds": 0.002641826916667848,
+    "transfer_seconds": 0.003234642499990059,
+    "compute_seconds": 0.061420926500015106,
+    "end_to_end_seconds": 0.06729739591667301,
+    "samples_per_second": 951.0026224379349,
+    "peak_memory_bytes": 698994176,
+    "used_fields_exact": true
+  },
+  "smoke": {
+    "steps": 5,
+    "resume_exact": true,
+    "drive_restore_exact": true,
+    "drive_checkpoint_sha256": "c16338f455245540b3ca58d963a5e458543f7ee49a684d998568abcc7cc3df3f"
+  },
+  "overfit": {
+    "windows": 64,
+    "steps": 300,
+    "beta": 0.0,
+    "diagnostic_only": true,
+    "initial_action_l1_20step_mean": 0.4997853055596352,
+    "final_action_l1_20step_mean": 0.0467292295768857,
+    "seconds": 18.775825475000033
+  },
+  "interface": {
+    "pretrained": true,
+    "train_steps": 2,
+    "scenes": 5,
+    "max_steps": 20,
+    "best_selected_and_mirrored": true,
+    "success_count": 0,
+    "mean_final_coverage": 0.0634245901751356,
+    "marker": "ACT_PRETRAINED_ROLLOUT_SELECTION_VERIFIED"
+  },
+  "formal_launch": {
+    "utc": "2026-09-17T15:49:39.250705+00:00",
+    "pid": 6075,
+    "git_commit": "53dddff105b664612bedcf150cbc1f1fd2542bb6",
+    "seed": 0,
+    "batch_size": 64,
+    "num_workers": 2,
+    "train_steps": 40000,
+    "warmup_steps": 500,
+    "checkpoint_frequency": 1000,
+    "evaluation_frequency": 5000,
+    "evaluation_scenes": 50,
+    "mirror_directory": "/content/drive/MyDrive/act-pusht-runs/act-seed0-20260917-l4",
+    "status": "running",
+    "observed_step": 2101,
+    "drive_mirrored_step": 2000
+  }
+}
