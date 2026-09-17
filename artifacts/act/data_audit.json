@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "repo_id": "lerobot/pusht_image",
+  "dataset_fingerprint": "1acd5a4a79f5a8e4a56a5dbb209d49242565ca1e5d89b994df2b537f5be04a8c",
+  "episode_count": 206,
+  "frame_count": 25650,
+  "valid_window_count": 25444,
+  "validity_rule": "local step 0 through episode length - 2; terminal row excluded",
+  "training_normalization": {
+    "agent_position": {
+      "count": 25444,
+      "min": [
+        13.45642375946045,
+        32.93829345703125
+      ],
+      "max": [
+        496.14617919921875,
+        510.9578857421875
+      ],
+      "mean": [
+        229.23837775817515,
+        293.2762800079343
+      ],
+      "std": [
+        102.13936155400349,
+        96.76562366273846
+      ]
+    },
+    "action": {
+      "count": 25444,
+      "min": [
+        12.0,
+        25.0
+      ],
+      "max": [
+        511.0,
+        511.0
+      ],
+      "mean": [
+        228.35391447885553,
+        293.960658701462
+      ],
+      "std": [
+        101.90780594150296,
+        96.33352477906686
+      ]
+    },
+    "std_floor": 1e-06
+  }
+}

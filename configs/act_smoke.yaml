@@ -1,0 +1,31 @@
+model:
+  name: act
+  pretrained: false
+  d_model: 256
+  nhead: 8
+  num_encoder_layers: 4
+  num_latent_layers: 4
+  latent_dim: 32
+  chunk_size: 16
+
+data:
+  dataset_root: data/lerobot/pusht_image
+  episode_manifest: splits/act_all_episodes.json
+  normalization_path: artifacts/act/data_audit.json
+  action_horizon: 16
+
+training:
+  seed: 0
+  batch_size: 2
+  train_steps: 5
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  warmup_steps: 0
+  gradient_clip_norm: 1.0
+  beta: 10.0
+
+checkpoint:
+  frequency: 5
+
+evaluation:
+  enabled: false

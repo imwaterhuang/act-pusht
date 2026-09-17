@@ -1,0 +1,37 @@
+# Formal budget remains unset until throughput is measured on the target device.
+# Set batch_size, train_steps and checkpoint/evaluation intervals together.
+model:
+  name: act
+  pretrained: true
+  d_model: 256
+  nhead: 8
+  num_encoder_layers: 4
+  num_latent_layers: 4
+  latent_dim: 32
+  chunk_size: 16
+
+data:
+  dataset_root: data/lerobot/pusht_image
+  episode_manifest: splits/act_all_episodes.json
+  normalization_path: artifacts/act/data_audit.json
+  action_horizon: 16
+
+training:
+  seed: 0
+  batch_size: null
+  train_steps: null
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  warmup_steps: 0
+  gradient_clip_norm: 1.0
+  beta: 10.0
+
+checkpoint:
+  frequency: null
+
+evaluation:
+  enabled: true
+  development_scenes: splits/act_development_scenes.json
+  frequency: null
+  max_steps: 300
+  execute_steps: 4

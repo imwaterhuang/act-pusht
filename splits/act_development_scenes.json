@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "task": "pusht",
+  "split": "development",
+  "generation_seed": 20260917,
+  "generator": "mini_wam.studio.pusht.random_scene",
+  "environment_version": "0.1.6",
+  "count": 50,
+  "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+  "scenes": [
+    {
+      "scene_id": "act-development-000",
+      "environment_seed": 1058702899,
+      "state": {
+        "agent_x": 301.0,
+        "agent_y": 304.0,
+        "block_x": 156.0,
+        "block_y": 323.0,
+        "block_angle": -2.068519191300571
+      }
+    },
+    {
+      "scene_id": "act-development-001",
+      "environment_seed": 187591800,
+      "state": {
+        "agent_x": 119.0,
+        "agent_y": 302.0,
+        "block_x": 219.0,
+        "block_y": 254.0,
+        "block_angle": 1.3034720624700622
+      }
+    },
+    {
+      "scene_id": "act-development-002",
+      "environment_seed": 350921661,
+      "state": {
+        "agent_x": 377.0,
+        "agent_y": 396.0,
+        "block_x": 173.0,
+        "block_y": 250.0,
+        "block_angle": -0.8806587886090017
+      }
+    },
+    {
+      "scene_id": "act-development-003",
+      "environment_seed": 537657434,
+      "state": {
+        "agent_x": 349.0,
+        "agent_y": 50.0,
+        "block_x": 156.0,
+        "block_y": 157.0,
+        "block_angle": -1.9550433607153823
+      }
+    },
+    {
+      "scene_id": "act-development-004",
+      "environment_seed": 1342739746,
+      "state": {
+        "agent_x": 230.0,
+        "agent_y": 319.0,
+        "block_x": 272.0,
+        "block_y": 155.0,
+        "block_angle": 2.9119600294895003
+      }
+    },
+    {
+      "scene_id": "act-development-005",
+      "environment_seed": 1333485295,
+      "state": {
+        "agent_x": 296.0,
+        "agent_y": 306.0,
+        "block_x": 233.0,
+        "block_y": 306.0,
+        "block_angle": -2.694437729046534
+      }
+    },
+    {
+      "scene_id": "act-development-006",
+      "environment_seed": 316235045,
+      "state": {
+        "agent_x": 419.0,
+        "agent_y": 143.0,
+        "block_x": 333.0,
+        "block_y": 241.0,
+        "block_angle": 0.7161116246192368
+      }
+    },
+    {
+      "scene_id": "act-development-007",
+      "environment_seed": 139015931,
+      "state": {
+        "agent_x": 65.0,
+        "agent_y": 75.0,
+        "block_x": 167.0,
+        "block_y": 364.0,
+        "block_angle": 0.6657345758768953
+      }
+    },
+    {
+      "scene_id": "act-development-008",
+      "environment_seed": 1122101884,
+      "state": {
+        "agent_x": 372.0,
+        "agent_y": 236.0,
+        "block_x": 259.0,
+        "block_y": 264.0,
+        "block_angle": 0.2257020082669242
+      }
+    },
+    {
+      "scene_id": "act-development-009",
+      "environment_seed": 1782888597,
+      "state": {
+        "agent_x": 448.0,
+        "agent_y": 151.0,
+        "block_x": 205.0,
+        "block_y": 379.0,
+        "block_angle": 0.4048575078095584
+      }
+    },
+    {
+      "scene_id": "act-development-010",
+      "environment_seed": 770699727,
+      "state": {
+        "agent_x": 394.0,
+        "agent_y": 162.0,
+        "block_x": 121.0,
+        "block_y": 374.0,
+        "block_angle": 3.013263167782533
+      }
+    },
+    {
+      "scene_id": "act-development-011",
+      "environment_seed": 1453113974,
+      "state": {
+        "agent_x": 437.0,
+        "agent_y": 273.0,
+        "block_x": 147.0,
+        "block_y": 350.0,
+        "block_angle": -2.837065348799835
+      }
+    },
+    {
+      "scene_id": "act-development-012",
+      "environment_seed": 378934179,
+      "state": {
+        "agent_x": 87.0,
+        "agent_y": 92.0,
+        "block_x": 247.0,
+        "block_y": 205.0,
+        "block_angle": 0.18103141205028417
+      }
+    },
+    {
+      "scene_id": "act-development-013",
+      "environment_seed": 1953530173,
+      "state": {
+        "agent_x": 424.0,
+        "agent_y": 134.0,
+        "block_x": 250.0,
+        "block_y": 152.0,
+        "block_angle": -2.622724500462537
+      }
+    },
+    {
+      "scene_id": "act-development-014",
+      "environment_seed": 314702677,
+      "state": {
+        "agent_x": 58.0,
+        "agent_y": 54.0,
+        "block_x": 219.0,
+        "block_y": 370.0,
+        "block_angle": -2.719428099146968
+      }
+    },
+    {
+      "scene_id": "act-development-015",
+      "environment_seed": 429966759,
+      "state": {
+        "agent_x": 393.0,
+        "agent_y": 84.0,
+        "block_x": 277.0,
+        "block_y": 294.0,
+        "block_angle": -1.0250895144583363
+      }
+    },
+    {
+      "scene_id": "act-development-016",
+      "environment_seed": 1788117733,
+      "state": {
+        "agent_x": 67.0,
+        "agent_y": 373.0,
+        "block_x": 280.0,
+        "block_y": 256.0,
+        "block_angle": -0.8358895609262539
+      }
+    },
+    {
+      "scene_id": "act-development-017",
+      "environment_seed": 727374549,
+      "state": {
+        "agent_x": 110.0,
+        "agent_y": 312.0,
+        "block_x": 286.0,
+        "block_y": 173.0,
+        "block_angle": -1.6257087931979635
+      }
+    },
+    {
+      "scene_id": "act-development-018",
+      "environment_seed": 119792254,
+      "state": {
+        "agent_x": 390.0,
+        "agent_y": 423.0,
+        "block_x": 152.0,
+        "block_y": 262.0,
+        "block_angle": -2.32929396228371
+      }
+    },
+    {
+      "scene_id": "act-development-019",
+      "environment_seed": 55468800,
+      "state": {
+        "agent_x": 91.0,
+        "agent_y": 326.0,
+        "block_x": 379.0,
+        "block_y": 351.0,
+        "block_angle": -2.2937518447734573
+      }
+    },
+    {
+      "scene_id": "act-development-020",
+      "environment_seed": 247762589,
+      "state": {
+        "agent_x": 201.0,
+        "agent_y": 235.0,
+        "block_x": 352.0,
+        "block_y": 273.0,
+        "block_angle": 3.069333998087647
+      }
+    },
+    {
+      "scene_id": "act-development-021",
+      "environment_seed": 1211552352,
+      "state": {
+        "agent_x": 385.0,
+        "agent_y": 416.0,
+        "block_x": 202.0,
+        "block_y": 167.0,
+        "block_angle": 2.3972518973077444
+      }
+    },
+    {
+      "scene_id": "act-development-022",
+      "environment_seed": 546275418,
+      "state": {
+        "agent_x": 399.0,
+        "agent_y": 221.0,
+        "block_x": 275.0,
+        "block_y": 210.0,
+        "block_angle": 3.072554957195187
+      }
+    },
+    {
+      "scene_id": "act-development-023",
+      "environment_seed": 2018446254,
+      "state": {
+        "agent_x": 355.0,
+        "agent_y": 202.0,
+        "block_x": 188.0,
+        "block_y": 242.0,
+        "block_angle": 0.5921049653396995
+      }
+    },
+    {
+      "scene_id": "act-development-024",
+      "environment_seed": 481638052,
+      "state": {
+        "agent_x": 345.0,
+        "agent_y": 396.0,
+        "block_x": 151.0,
+        "block_y": 205.0,
+        "block_angle": -0.22463222016388049
+      }
+    },
+    {
+      "scene_id": "act-development-025",
+      "environment_seed": 96736076,
+      "state": {
+        "agent_x": 83.0,
+        "agent_y": 328.0,
+        "block_x": 311.0,
+        "block_y": 169.0,
+        "block_angle": 1.381977627830728
+      }
+    },
+    {
+      "scene_id": "act-development-026",
+      "environment_seed": 93624015,
+      "state": {
+        "agent_x": 345.0,
+        "agent_y": 255.0,
+        "block_x": 382.0,
+        "block_y": 177.0,
+        "block_angle": 2.410238942748696
+      }
+    },
+    {
+      "scene_id": "act-development-027",
+      "environment_seed": 2054458371,
+      "state": {
+        "agent_x": 386.0,
+        "agent_y": 221.0,
+        "block_x": 255.0,
+        "block_y": 256.0,
+        "block_angle": -0.9058895569424541
+      }
+    },
+    {
+      "scene_id": "act-development-028",
+      "environment_seed": 1883660878,
+      "state": {
+        "agent_x": 107.0,
+        "agent_y": 326.0,
+        "block_x": 188.0,
+        "block_y": 171.0,
+        "block_angle": 3.11682407385867
+      }
+    },
+    {
+      "scene_id": "act-development-029",
+      "environment_seed": 346226163,
+      "state": {
+        "agent_x": 294.0,
+        "agent_y": 192.0,
+        "block_x": 103.0,
+        "block_y": 373.0,
+        "block_angle": 0.7725130977593766
+      }
+    },
+    {
+      "scene_id": "act-development-030",
+      "environment_seed": 387645191,
+      "state": {
+        "agent_x": 337.0,
+        "agent_y": 406.0,
+        "block_x": 391.0,
+        "block_y": 200.0,
+        "block_angle": 0.28949837987705923
+      }
+    },
+    {
+      "scene_id": "act-development-031",
+      "environment_seed": 166444523,
+      "state": {
+        "agent_x": 388.0,
+        "agent_y": 397.0,
+        "block_x": 282.0,
+        "block_y": 290.0,
+        "block_angle": -0.5044246618977182
+      }
+    },
+    {
+      "scene_id": "act-development-032",
+      "environment_seed": 1106752639,
+      "state": {
+        "agent_x": 429.0,
+        "agent_y": 408.0,
+        "block_x": 302.0,
+        "block_y": 147.0,
+        "block_angle": 1.5766632193525494
+      }
+    },
+    {
+      "scene_id": "act-development-033",
+      "environment_seed": 1719757593,
+      "state": {
+        "agent_x": 341.0,
+        "agent_y": 66.0,
+        "block_x": 103.0,
+        "block_y": 236.0,
+        "block_angle": -2.8126248939623824
+      }
+    },
+    {
+      "scene_id": "act-development-034",
+      "environment_seed": 1833195999,
+      "state": {
+        "agent_x": 150.0,
+        "agent_y": 339.0,
+        "block_x": 239.0,
+        "block_y": 232.0,
+        "block_angle": -1.2020913016822654
+      }
+    },
+    {
+      "scene_id": "act-development-035",
+      "environment_seed": 1002022913,
+      "state": {
+        "agent_x": 286.0,
+        "agent_y": 394.0,
+        "block_x": 184.0,
+        "block_y": 210.0,
+        "block_angle": 0.5896304576237759
+      }
+    },
+    {
+      "scene_id": "act-development-036",
+      "environment_seed": 544994210,
+      "state": {
+        "agent_x": 342.0,
+        "agent_y": 134.0,
+        "block_x": 218.0,
+        "block_y": 104.0,
+        "block_angle": -1.2681013179285923
+      }
+    },
+    {
+      "scene_id": "act-development-037",
+      "environment_seed": 1341002248,
+      "state": {
+        "agent_x": 137.0,
+        "agent_y": 124.0,
+        "block_x": 382.0,
+        "block_y": 255.0,
+        "block_angle": 0.3083476900966427
+      }
+    },
+    {
+      "scene_id": "act-development-038",
+      "environment_seed": 1667087953,
+      "state": {
+        "agent_x": 212.0,
+        "agent_y": 169.0,
+        "block_x": 319.0,
+        "block_y": 288.0,
+        "block_angle": 2.1597585412833364
+      }
+    },
+    {
+      "scene_id": "act-development-039",
+      "environment_seed": 600470953,
+      "state": {
+        "agent_x": 310.0,
+        "agent_y": 117.0,
+        "block_x": 375.0,
+        "block_y": 236.0,
+        "block_angle": 1.3387605421291564
+      }
+    },
+    {
+      "scene_id": "act-development-040",
+      "environment_seed": 2118582195,
+      "state": {
+        "agent_x": 223.0,
+        "agent_y": 59.0,
+        "block_x": 349.0,
+        "block_y": 235.0,
+        "block_angle": 0.6358870059110807
+      }
+    },
+    {
+      "scene_id": "act-development-041",
+      "environment_seed": 415847265,
+      "state": {
+        "agent_x": 106.0,
+        "agent_y": 368.0,
+        "block_x": 238.0,
+        "block_y": 327.0,
+        "block_angle": 1.136679417940478
+      }
+    },
+    {
+      "scene_id": "act-development-042",
+      "environment_seed": 468180639,
+      "state": {
+        "agent_x": 363.0,
+        "agent_y": 277.0,
+        "block_x": 295.0,
+        "block_y": 138.0,
+        "block_angle": -2.821356538846977
+      }
+    },
+    {
+      "scene_id": "act-development-043",
+      "environment_seed": 423243265,
+      "state": {
+        "agent_x": 78.0,
+        "agent_y": 58.0,
+        "block_x": 170.0,
+        "block_y": 195.0,
+        "block_angle": 2.8120729166125087
+      }
+    },
+    {
+      "scene_id": "act-development-044",
+      "environment_seed": 1854246220,
+      "state": {
+        "agent_x": 303.0,
+        "agent_y": 275.0,
+        "block_x": 163.0,
+        "block_y": 363.0,
+        "block_angle": -0.6110523262093601
+      }
+    },
+    {
+      "scene_id": "act-development-045",
+      "environment_seed": 393107741,
+      "state": {
+        "agent_x": 287.0,
+        "agent_y": 443.0,
+        "block_x": 329.0,
+        "block_y": 181.0,
+        "block_angle": 2.574037930505793
+      }
+    },
+    {
+      "scene_id": "act-development-046",
+      "environment_seed": 1126327856,
+      "state": {
+        "agent_x": 388.0,
+        "agent_y": 273.0,
+        "block_x": 259.0,
+        "block_y": 300.0,
+        "block_angle": 2.2032390828846053
+      }
+    },
+    {
+      "scene_id": "act-development-047",
+      "environment_seed": 1668768980,
+      "state": {
+        "agent_x": 432.0,
+        "agent_y": 219.0,
+        "block_x": 231.0,
+        "block_y": 154.0,
+        "block_angle": 2.5153968798355235
+      }
+    },
+    {
+      "scene_id": "act-development-048",
+      "environment_seed": 721174193,
+      "state": {
+        "agent_x": 238.0,
+        "agent_y": 65.0,
+        "block_x": 272.0,
+        "block_y": 281.0,
+        "block_angle": -3.0843260091769102
+      }
+    },
+    {
+      "scene_id": "act-development-049",
+      "environment_seed": 2022140719,
+      "state": {
+        "agent_x": 401.0,
+        "agent_y": 199.0,
+        "block_x": 396.0,
+        "block_y": 354.0,
+        "block_angle": -2.7478048626140055
+      }
+    }
+  ]
+}

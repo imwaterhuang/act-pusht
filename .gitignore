@@ -1,0 +1,12 @@
+/data/
+/runs/
+/outputs/
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.pt
+*.pth
+*.ckpt
+.env
+.DS_Store
