@@ -1,0 +1,157 @@
+{
+  "candidates": [
+    {
+      "step": 5000,
+      "checkpoint": "evaluation/candidates/step_0005000.pt",
+      "checkpoint_sha256": "553c4b9e38b646cd8a5c4499b933635ce15ad999daa3caca98855309370e119a",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 11,
+        "success_rate": 0.22,
+        "success_rate_wilson_95": [
+          0.1275391597021442,
+          0.3524154958125367
+        ],
+        "mean_final_coverage": 0.5780007109738274,
+        "mean_max_coverage": 0.6770348665148631,
+        "mean_reward": 97.84426762748097
+      },
+      "selected": true
+    },
+    {
+      "step": 10000,
+      "checkpoint": "evaluation/candidates/step_0010000.pt",
+      "checkpoint_sha256": "d48ed9fe0a5a7fe8fa0267f9f5da33e5f79a7da7d3eeceb239c2567771c938bd",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 2,
+        "success_rate": 0.04,
+        "success_rate_wilson_95": [
+          0.011038884327619805,
+          0.1346009068750702
+        ],
+        "mean_final_coverage": 0.6444659497610239,
+        "mean_max_coverage": 0.7219667200252416,
+        "mean_reward": 137.11397440626035
+      },
+      "selected": false
+    },
+    {
+      "step": 15000,
+      "checkpoint": "evaluation/candidates/step_0015000.pt",
+      "checkpoint_sha256": "311863d1b57c6534f42d16f6f116b09a3f197df3af189a4548ae2f04c75da130",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 14,
+        "success_rate": 0.28,
+        "success_rate_wilson_95": [
+          0.17474170665911232,
+          0.4166512369595657
+        ],
+        "mean_final_coverage": 0.6847735475547619,
+        "mean_max_coverage": 0.7495763905149473,
+        "mean_reward": 107.38941494843968
+      },
+      "selected": true
+    },
+    {
+      "step": 20000,
+      "checkpoint": "evaluation/candidates/step_0020000.pt",
+      "checkpoint_sha256": "19d10640f3068e8ddbd021f1ad81f0ccbd87fade4a2523f85f7fe241400362fe",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 10,
+        "success_rate": 0.2,
+        "success_rate_wilson_95": [
+          0.1124375001577611,
+          0.3303710593222542
+        ],
+        "mean_final_coverage": 0.6952456613529567,
+        "mean_max_coverage": 0.7387279345671505,
+        "mean_reward": 126.63927367281411
+      },
+      "selected": false
+    },
+    {
+      "step": 25000,
+      "checkpoint": "evaluation/candidates/step_0025000.pt",
+      "checkpoint_sha256": "cfa1ced7742ad8c5a9b78a22df7ec0dee07a413f41eb4d60443a9e1b085fb165",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 12,
+        "success_rate": 0.24,
+        "success_rate_wilson_95": [
+          0.1429739139699173,
+          0.3741268375794292
+        ],
+        "mean_final_coverage": 0.6533766374025483,
+        "mean_max_coverage": 0.7186880904501245,
+        "mean_reward": 110.55767345848295
+      },
+      "selected": false
+    },
+    {
+      "step": 30000,
+      "checkpoint": "evaluation/candidates/step_0030000.pt",
+      "checkpoint_sha256": "e12c51f026eb19e56c3602aff14907ff55c0e8859606ef416bf150961bef0fb1",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 17,
+        "success_rate": 0.34,
+        "success_rate_wilson_95": [
+          0.2243694922250009,
+          0.478461739497674
+        ],
+        "mean_final_coverage": 0.7241099655415097,
+        "mean_max_coverage": 0.7679549253339553,
+        "mean_reward": 104.50183075502912
+      },
+      "selected": true
+    },
+    {
+      "step": 35000,
+      "checkpoint": "evaluation/candidates/step_0035000.pt",
+      "checkpoint_sha256": "2a4c57c8043b1557f47f0bcebe6edd64aaecc4eb560541a05648791cfc9150e8",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 15,
+        "success_rate": 0.3,
+        "success_rate_wilson_95": [
+          0.19103553500880954,
+          0.437503504644534
+        ],
+        "mean_final_coverage": 0.7179024739712415,
+        "mean_max_coverage": 0.7833549973650303,
+        "mean_reward": 113.20469627580368
+      },
+      "selected": false
+    },
+    {
+      "step": 40000,
+      "checkpoint": "evaluation/candidates/step_0040000.pt",
+      "checkpoint_sha256": "a7d4ca44f0f276ee247534cca8a04a80a0a683bf6bfe82400132c1c40f3346cf",
+      "scenes_hash": "9efdd5c24548ff53f3076271cb4e4d12917a232edad1d4da89641065d6509738",
+      "summary": {
+        "episode_count": 50,
+        "success_count": 15,
+        "success_rate": 0.3,
+        "success_rate_wilson_95": [
+          0.19103553500880954,
+          0.437503504644534
+        ],
+        "mean_final_coverage": 0.726736763546631,
+        "mean_max_coverage": 0.787315364188788,
+        "mean_reward": 122.6444858066923
+      },
+      "selected": false
+    }
+  ],
+  "best_step": 30000
+}

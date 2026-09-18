@@ -1,0 +1,502 @@
+[
+  {
+    "scene_id": "act-review-000",
+    "environment_seed": 1895820736,
+    "success": true,
+    "first_success_step": 81,
+    "original_final_coverage": 0.8381982325334242,
+    "original_max_coverage": 0.9243396049033789,
+    "release_stop_coverage": 0.8718647633382544,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-001",
+    "environment_seed": 2077457867,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.6491858524869741,
+    "original_max_coverage": 0.6500334806195093,
+    "release_stop_coverage": 0.6491858524869741,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-002",
+    "environment_seed": 1387475476,
+    "success": true,
+    "first_success_step": 112,
+    "original_final_coverage": 0.9656931619652813,
+    "original_max_coverage": 0.9656931619652813,
+    "release_stop_coverage": 0.8806618702162858,
+    "original_steps": 258
+  },
+  {
+    "scene_id": "act-review-003",
+    "environment_seed": 1178395058,
+    "success": true,
+    "first_success_step": 150,
+    "original_final_coverage": 0.9506204999851583,
+    "original_max_coverage": 0.9506204999851583,
+    "release_stop_coverage": 0.9014846191421986,
+    "original_steps": 216
+  },
+  {
+    "scene_id": "act-review-004",
+    "environment_seed": 130771854,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-005",
+    "environment_seed": 1248601064,
+    "success": true,
+    "first_success_step": 119,
+    "original_final_coverage": 0.9459321408418299,
+    "original_max_coverage": 0.9462889882956839,
+    "release_stop_coverage": 0.8776492914758881,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-006",
+    "environment_seed": 151654494,
+    "success": true,
+    "first_success_step": 124,
+    "original_final_coverage": 0.9596826329631372,
+    "original_max_coverage": 0.9596826329631372,
+    "release_stop_coverage": 0.8766779507854606,
+    "original_steps": 126
+  },
+  {
+    "scene_id": "act-review-007",
+    "environment_seed": 1227756520,
+    "success": true,
+    "first_success_step": 89,
+    "original_final_coverage": 0.9378916389745183,
+    "original_max_coverage": 0.9494470801347383,
+    "release_stop_coverage": 0.8730695964887545,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-008",
+    "environment_seed": 289549218,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.06998085264561242,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-009",
+    "environment_seed": 1270031553,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.35373658296680555,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-010",
+    "environment_seed": 1285312200,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-011",
+    "environment_seed": 1020935418,
+    "success": true,
+    "first_success_step": 76,
+    "original_final_coverage": 0.9525675757856088,
+    "original_max_coverage": 0.9525675757856088,
+    "release_stop_coverage": 0.8721339688536492,
+    "original_steps": 79
+  },
+  {
+    "scene_id": "act-review-012",
+    "environment_seed": 2078630907,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.25797011769470596,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-013",
+    "environment_seed": 1698512322,
+    "success": true,
+    "first_success_step": 123,
+    "original_final_coverage": 0.9521816629754358,
+    "original_max_coverage": 0.9521816629754358,
+    "release_stop_coverage": 0.9037319996840497,
+    "original_steps": 124
+  },
+  {
+    "scene_id": "act-review-014",
+    "environment_seed": 521124457,
+    "success": true,
+    "first_success_step": 166,
+    "original_final_coverage": 0.9386414513891338,
+    "original_max_coverage": 0.9386414513891338,
+    "release_stop_coverage": 0.8951249568994774,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-015",
+    "environment_seed": 2055943996,
+    "success": true,
+    "first_success_step": 116,
+    "original_final_coverage": 0.9392265109832771,
+    "original_max_coverage": 0.9392265109832771,
+    "release_stop_coverage": 0.8797247981281706,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-016",
+    "environment_seed": 1928715917,
+    "success": true,
+    "first_success_step": 146,
+    "original_final_coverage": 0.9699799276885397,
+    "original_max_coverage": 0.9699799276885397,
+    "release_stop_coverage": 0.8730431994062945,
+    "original_steps": 166
+  },
+  {
+    "scene_id": "act-review-017",
+    "environment_seed": 1663457050,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.007370490658853553,
+    "original_max_coverage": 0.6029850272590257,
+    "release_stop_coverage": 0.007370490658853553,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-018",
+    "environment_seed": 846135511,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.06465690718031707,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-019",
+    "environment_seed": 874809835,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-020",
+    "environment_seed": 1920192043,
+    "success": true,
+    "first_success_step": 104,
+    "original_final_coverage": 0.9422670496034681,
+    "original_max_coverage": 0.9422670496034681,
+    "release_stop_coverage": 0.898454419989278,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-021",
+    "environment_seed": 767777220,
+    "success": true,
+    "first_success_step": 195,
+    "original_final_coverage": 0.9603669580766442,
+    "original_max_coverage": 0.9603669580766442,
+    "release_stop_coverage": 0.8810237157361893,
+    "original_steps": 227
+  },
+  {
+    "scene_id": "act-review-022",
+    "environment_seed": 120482626,
+    "success": true,
+    "first_success_step": 223,
+    "original_final_coverage": 0.9606780701078694,
+    "original_max_coverage": 0.9606780701078694,
+    "release_stop_coverage": 0.8795221257707464,
+    "original_steps": 227
+  },
+  {
+    "scene_id": "act-review-023",
+    "environment_seed": 245637698,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-024",
+    "environment_seed": 1685401140,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.10310396118892551,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-025",
+    "environment_seed": 943633367,
+    "success": true,
+    "first_success_step": 110,
+    "original_final_coverage": 0.9557979912799106,
+    "original_max_coverage": 0.9557979912799106,
+    "release_stop_coverage": 0.875173834214042,
+    "original_steps": 185
+  },
+  {
+    "scene_id": "act-review-026",
+    "environment_seed": 1860090290,
+    "success": true,
+    "first_success_step": 73,
+    "original_final_coverage": 0.9556479977725929,
+    "original_max_coverage": 0.9556479977725929,
+    "release_stop_coverage": 0.8843298579520787,
+    "original_steps": 141
+  },
+  {
+    "scene_id": "act-review-027",
+    "environment_seed": 268656694,
+    "success": true,
+    "first_success_step": 162,
+    "original_final_coverage": 0.9314632848755234,
+    "original_max_coverage": 0.9348339644751175,
+    "release_stop_coverage": 0.9026387120770334,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-028",
+    "environment_seed": 1907680819,
+    "success": true,
+    "first_success_step": 107,
+    "original_final_coverage": 0.9106756088908569,
+    "original_max_coverage": 0.9336051260608729,
+    "release_stop_coverage": 0.8844473876691354,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-029",
+    "environment_seed": 1256468456,
+    "success": true,
+    "first_success_step": 221,
+    "original_final_coverage": 0.9079873235876447,
+    "original_max_coverage": 0.9298606429244168,
+    "release_stop_coverage": 0.8755380549422205,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-030",
+    "environment_seed": 597427694,
+    "success": true,
+    "first_success_step": 131,
+    "original_final_coverage": 0.8404840417584456,
+    "original_max_coverage": 0.9159126806121399,
+    "release_stop_coverage": 0.8760857343733723,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-031",
+    "environment_seed": 329945082,
+    "success": true,
+    "first_success_step": 157,
+    "original_final_coverage": 0.9525056364806308,
+    "original_max_coverage": 0.9525056364806308,
+    "release_stop_coverage": 0.888991347979835,
+    "original_steps": 158
+  },
+  {
+    "scene_id": "act-review-032",
+    "environment_seed": 132484286,
+    "success": true,
+    "first_success_step": 99,
+    "original_final_coverage": 0.957604412690045,
+    "original_max_coverage": 0.957604412690045,
+    "release_stop_coverage": 0.8844906647790804,
+    "original_steps": 120
+  },
+  {
+    "scene_id": "act-review-033",
+    "environment_seed": 1115728452,
+    "success": true,
+    "first_success_step": 186,
+    "original_final_coverage": 0.9253491720735137,
+    "original_max_coverage": 0.9253491720735137,
+    "release_stop_coverage": 0.8795836152373105,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-034",
+    "environment_seed": 427230268,
+    "success": true,
+    "first_success_step": 64,
+    "original_final_coverage": 0.8792736506080008,
+    "original_max_coverage": 0.9189877447129683,
+    "release_stop_coverage": 0.8806069283653788,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-035",
+    "environment_seed": 762854569,
+    "success": true,
+    "first_success_step": 265,
+    "original_final_coverage": 0.9456176700539927,
+    "original_max_coverage": 0.9456176700539927,
+    "release_stop_coverage": 0.876164655588161,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-036",
+    "environment_seed": 354430773,
+    "success": true,
+    "first_success_step": 178,
+    "original_final_coverage": 0.9789846861746966,
+    "original_max_coverage": 0.9789846861746966,
+    "release_stop_coverage": 0.8808465446048299,
+    "original_steps": 214
+  },
+  {
+    "scene_id": "act-review-037",
+    "environment_seed": 274590355,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-038",
+    "environment_seed": 252283498,
+    "success": true,
+    "first_success_step": 65,
+    "original_final_coverage": 0.9755415686492834,
+    "original_max_coverage": 0.9755415686492834,
+    "release_stop_coverage": 0.9271964185589846,
+    "original_steps": 66
+  },
+  {
+    "scene_id": "act-review-039",
+    "environment_seed": 1460038172,
+    "success": true,
+    "first_success_step": 123,
+    "original_final_coverage": 0.9547048313064406,
+    "original_max_coverage": 0.9547048313064406,
+    "release_stop_coverage": 0.8766047975916748,
+    "original_steps": 147
+  },
+  {
+    "scene_id": "act-review-040",
+    "environment_seed": 446895500,
+    "success": true,
+    "first_success_step": 92,
+    "original_final_coverage": 0.9594270289220052,
+    "original_max_coverage": 0.9594270289220052,
+    "release_stop_coverage": 0.8854852515722351,
+    "original_steps": 134
+  },
+  {
+    "scene_id": "act-review-041",
+    "environment_seed": 1834272064,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.8339914240933646,
+    "original_max_coverage": 0.8613426599669651,
+    "release_stop_coverage": 0.8339914240933646,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-042",
+    "environment_seed": 315951184,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.06645997966232839,
+    "original_max_coverage": 0.06645997966232839,
+    "release_stop_coverage": 0.06645997966232839,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-043",
+    "environment_seed": 1289238206,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0017911204051113024,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-044",
+    "environment_seed": 840213459,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.1536441561968613,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-045",
+    "environment_seed": 1664068649,
+    "success": true,
+    "first_success_step": 104,
+    "original_final_coverage": 0.9814076167113589,
+    "original_max_coverage": 0.9814076167113589,
+    "release_stop_coverage": 0.8808807183037438,
+    "original_steps": 106
+  },
+  {
+    "scene_id": "act-review-046",
+    "environment_seed": 436382411,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-047",
+    "environment_seed": 358554865,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.3615524917605491,
+    "original_max_coverage": 0.521828367998789,
+    "release_stop_coverage": 0.3615524917605491,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-048",
+    "environment_seed": 344310330,
+    "success": false,
+    "first_success_step": null,
+    "original_final_coverage": 0.0,
+    "original_max_coverage": 0.0,
+    "release_stop_coverage": 0.0,
+    "original_steps": 300
+  },
+  {
+    "scene_id": "act-review-049",
+    "environment_seed": 1696090653,
+    "success": true,
+    "first_success_step": 87,
+    "original_final_coverage": 0.9720555898265932,
+    "original_max_coverage": 0.9720555898265932,
+    "release_stop_coverage": 0.8759243657083804,
+    "original_steps": 116
+  }
+]

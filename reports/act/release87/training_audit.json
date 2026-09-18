@@ -1,0 +1,10 @@
+{
+  "rows": 40000,
+  "unique_steps": 40000,
+  "first_step": 1,
+  "last_step": 40000,
+  "last_1000_mean_action_l1": 0.015613483536988496,
+  "last_1000_mean_kl": 1.3429333841941115e-07,
+  "elapsed_seconds": 3506.1159921129997,
+  "train_metrics_sha256": "51631b01737bdd124fe4dc989470118fb86819a20751d2b38d8e4f94f531bc5a"
+}

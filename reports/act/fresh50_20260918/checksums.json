@@ -1,0 +1,15 @@
+{
+  "scenes.json": "8639f3aa166617aab2ddabb35a9b7cdce32bd0878f548ad4d5c37d53dda76e74",
+  "evaluate_three_checkpoints.py": "3555af96e277cf9a1a375a0833d1cb5c930f2bd513bc198576571577f8a30ad0",
+  "manifest.json": "ac4af9002622eb89ddf910afde5b1ba1149809d11758ad27ad43eab4d56b3828",
+  "summary.json": "8eade92acb116db184e51fd4c0eca8efbff317c5e0fb0a1da143f435e784e802",
+  "paired_scenes.csv": "4f7e04acd5a5ff05f1ec4030be758adfff70ef2c046095dbdc4cdb6889b8bd6e",
+  "REPORT.md": "e3e650f2c9eddc105bcffb41ad8ee8c627d4d62d3fe91e6cbd504565559cba71",
+  "execution.log": "44d1d1a33e9fe85648707fb5a69a2a377d3827e5961664c913e8e206ad7101dc",
+  "ACT_Fresh50_Comparison.ipynb": "3ab7804b8095f1cc7763de84be00cc6e5e95c4860a7910d3b91d18b6703f2b68",
+  "coverage85.csv": "b10797879af6c2aff6c693995c5b77743d23339c8993c7e595920c93fed2ed39",
+  "compute_coverage85.py": "bbda7bb82c42e9f44e555f9cc28e2b3e5618f364865477824a6d923a0e9f97b0",
+  "step_30000/results.json": "b7f093c0585d851390dc32fe52ff68cd3b71e01222acf5cd04579e9dfbc3777a",
+  "step_35000/results.json": "7fdfb3cfe99630c4d332c26eaeaae104e1a3dc8567faf8f190abe604782c7620",
+  "step_40000/results.json": "460797ef7c38904aea8d34f76a271217f8b09dcf35d851c48187e195c6575162"
+}

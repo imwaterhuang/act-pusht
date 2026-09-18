@@ -1,0 +1,4 @@
+step,episode_count,success_count,final_coverage_gt_85_count,max_coverage_gt_85_count,ever_gt85_but_final_le85_count,mean_final_coverage
+30000,50,21,31,33,2,0.6726435278736215
+35000,50,14,27,31,4,0.6040304350982661
+40000,50,18,29,32,3,0.6223403172839387

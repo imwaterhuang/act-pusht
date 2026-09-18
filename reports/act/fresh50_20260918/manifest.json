@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-18T00:43:50.616766+00:00",
+  "source_commit": "53dddff105b664612bedcf150cbc1f1fd2542bb6",
+  "gpu": "NVIDIA L4",
+  "torch": "2.11.0+cu128",
+  "python": "3.13.15",
+  "training_seed": 0,
+  "steps": [
+    30000,
+    35000,
+    40000
+  ],
+  "scene_count": 50,
+  "generation_seed": 2026091801,
+  "scenes_hash": "56724b01589f0730bade445ae3cd937afb20b895dcf79cdd830e4628662ec971",
+  "excluded_scene_files": [
+    "/content/act-pusht-review/splits/act_development_scenes.json",
+    "/content/drive/MyDrive/act-pusht-runs/validation-20260917-154249/interface/interface_scenes.json"
+  ],
+  "disjoint_seeds_and_states": true,
+  "original_best_step": 30000,
+  "original_selection_sha256": "51885af212aa3c32af147f962c4da72bf188586107cf79bfc30459a233516ba9",
+  "protocol": {
+    "max_steps": 300,
+    "execute_steps": 4,
+    "success": "coverage > 0.95",
+    "inference_latent": "z=0"
+  },
+  "checkpoint_sha256": {
+    "30000": "e12c51f026eb19e56c3602aff14907ff55c0e8859606ef416bf150961bef0fb1",
+    "35000": "2a4c57c8043b1557f47f0bcebe6edd64aaecc4eb560541a05648791cfc9150e8",
+    "40000": "a7d4ca44f0f276ee247534cca8a04a80a0a683bf6bfe82400132c1c40f3346cf"
+  },
+  "purpose": "User-requested paired comparison on 50 fresh scenes; original development selection is unchanged."
+}

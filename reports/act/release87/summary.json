@@ -1,0 +1,53 @@
+{
+  "threshold": 0.87,
+  "comparison": ">",
+  "success_definition": "Any executed step exceeds 0.87; first crossing ends release episode.",
+  "method": "Post-hoc rescoring of all saved traces from the original >0.95 evaluation; no new inference.",
+  "original_selection_threshold": 0.95,
+  "original_selected_step": 30000,
+  "original_traces_preserved": true,
+  "results": [
+    {
+      "step": 30000,
+      "episode_count": 50,
+      "success_count": 32,
+      "success_rate": 0.64,
+      "success_rate_wilson_95": [
+        0.501410168761127,
+        0.7586125034815325
+      ],
+      "original_final_gt87_count": 29,
+      "ever_success_but_original_final_le87": 3,
+      "mean_release_stop_coverage": 0.6429017666981616,
+      "source_sha256": "b7f093c0585d851390dc32fe52ff68cd3b71e01222acf5cd04579e9dfbc3777a"
+    },
+    {
+      "step": 35000,
+      "episode_count": 50,
+      "success_count": 31,
+      "success_rate": 0.62,
+      "success_rate_wilson_95": [
+        0.4815044693099298,
+        0.7413721068980641
+      ],
+      "original_final_gt87_count": 27,
+      "ever_success_but_original_final_le87": 4,
+      "mean_release_stop_coverage": 0.5943932748934418,
+      "source_sha256": "7fdfb3cfe99630c4d332c26eaeaae104e1a3dc8567faf8f190abe604782c7620"
+    },
+    {
+      "step": 40000,
+      "episode_count": 50,
+      "success_count": 31,
+      "success_rate": 0.62,
+      "success_rate_wilson_95": [
+        0.4815044693099298,
+        0.7413721068980641
+      ],
+      "original_final_gt87_count": 29,
+      "ever_success_but_original_final_le87": 2,
+      "mean_release_stop_coverage": 0.5863543280818853,
+      "source_sha256": "460797ef7c38904aea8d34f76a271217f8b09dcf35d851c48187e195c6575162"
+    }
+  ]
+}

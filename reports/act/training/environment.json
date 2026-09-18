@@ -1,0 +1,13 @@
+{
+  "python": "3.13.15",
+  "pytorch": "2.11.0+cu128",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "device": "cuda",
+  "cuda_available": true,
+  "git_commit": "53dddff105b664612bedcf150cbc1f1fd2542bb6",
+  "source_fingerprint": "dd641a15843e4d9eaa6eb416da4ba7d8d9f9301e190fa931a42ab231c2b1b56e",
+  "architecture": "act_v1",
+  "data_loader": {
+    "train_num_workers": 2
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "manifest": {
+    "created_utc": "2026-09-18T00:43:50.616766+00:00",
+    "source_commit": "53dddff105b664612bedcf150cbc1f1fd2542bb6",
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu128",
+    "python": "3.13.15",
+    "training_seed": 0,
+    "steps": [
+      30000,
+      35000,
+      40000
+    ],
+    "scene_count": 50,
+    "generation_seed": 2026091801,
+    "scenes_hash": "56724b01589f0730bade445ae3cd937afb20b895dcf79cdd830e4628662ec971",
+    "excluded_scene_files": [
+      "/content/act-pusht-review/splits/act_development_scenes.json",
+      "/content/drive/MyDrive/act-pusht-runs/validation-20260917-154249/interface/interface_scenes.json"
+    ],
+    "disjoint_seeds_and_states": true,
+    "original_best_step": 30000,
+    "original_selection_sha256": "51885af212aa3c32af147f962c4da72bf188586107cf79bfc30459a233516ba9",
+    "protocol": {
+      "max_steps": 300,
+      "execute_steps": 4,
+      "success": "coverage > 0.95",
+      "inference_latent": "z=0"
+    },
+    "checkpoint_sha256": {
+      "30000": "e12c51f026eb19e56c3602aff14907ff55c0e8859606ef416bf150961bef0fb1",
+      "35000": "2a4c57c8043b1557f47f0bcebe6edd64aaecc4eb560541a05648791cfc9150e8",
+      "40000": "a7d4ca44f0f276ee247534cca8a04a80a0a683bf6bfe82400132c1c40f3346cf"
+    },
+    "purpose": "User-requested paired comparison on 50 fresh scenes; original development selection is unchanged."
+  },
+  "results": [
+    {
+      "step": 30000,
+      "checkpoint_sha256": "e12c51f026eb19e56c3602aff14907ff55c0e8859606ef416bf150961bef0fb1",
+      "seconds": 83.51400203599951,
+      "episode_count": 50,
+      "success_count": 21,
+      "success_rate": 0.42,
+      "success_rate_wilson_95": [
+        0.2937500335471198,
+        0.5576655823142176
+      ],
+      "mean_final_coverage": 0.6726435278736215,
+      "mean_max_coverage": 0.7070817413836618,
+      "mean_reward": 81.56244386567471,
+      "final_coverage_gt_85_count": 31,
+      "max_coverage_gt_85_count": 33,
+      "final_coverage_gt_85_rate": 0.62,
+      "max_coverage_gt_85_rate": 0.66,
+      "ever_gt85_but_final_le85_count": 2
+    },
+    {
+      "step": 35000,
+      "checkpoint_sha256": "2a4c57c8043b1557f47f0bcebe6edd64aaecc4eb560541a05648791cfc9150e8",
+      "seconds": 87.84561292199942,
+      "episode_count": 50,
+      "success_count": 14,
+      "success_rate": 0.28,
+      "success_rate_wilson_95": [
+        0.17474170665911232,
+        0.4166512369595657
+      ],
+      "mean_final_coverage": 0.6040304350982661,
+      "mean_max_coverage": 0.6565368255194933,
+      "mean_reward": 91.31117533695411,
+      "final_coverage_gt_85_count": 27,
+      "max_coverage_gt_85_count": 31,
+      "final_coverage_gt_85_rate": 0.54,
+      "max_coverage_gt_85_rate": 0.62,
+      "ever_gt85_but_final_le85_count": 4
+    },
+    {
+      "step": 40000,
+      "checkpoint_sha256": "a7d4ca44f0f276ee247534cca8a04a80a0a683bf6bfe82400132c1c40f3346cf",
+      "seconds": 86.71665555799973,
+      "episode_count": 50,
+      "success_count": 18,
+      "success_rate": 0.36,
+      "success_rate_wilson_95": [
+        0.24138749651846741,
+        0.49858983123887307
+      ],
+      "mean_final_coverage": 0.6223403172839387,
+      "mean_max_coverage": 0.6633471749873778,
+      "mean_reward": 86.78130147062008,
+      "final_coverage_gt_85_count": 29,
+      "max_coverage_gt_85_count": 32,
+      "final_coverage_gt_85_rate": 0.58,
+      "max_coverage_gt_85_rate": 0.64,
+      "ever_gt85_but_final_le85_count": 3
+    }
+  ],
+  "complete": true,
+  "paired_comparisons": [
+    {
+      "a": 30000,
+      "b": 35000,
+      "only_a_success": 15,
+      "only_b_success": 8,
+      "mcnemar_exact_two_sided_p": 0.21003961563110352
+    },
+    {
+      "a": 30000,
+      "b": 40000,
+      "only_a_success": 11,
+      "only_b_success": 8,
+      "mcnemar_exact_two_sided_p": 0.6476058959960938
+    },
+    {
+      "a": 35000,
+      "b": 40000,
+      "only_a_success": 10,
+      "only_b_success": 14,
+      "mcnemar_exact_two_sided_p": 0.5412561893463135
+    }
+  ],
+  "coverage85_definition": {
+    "threshold": 0.85,
+    "comparison": ">",
+    "final": "coverage at episode end",
+    "ever": "maximum coverage over executed episode",
+    "note": "Includes strict >95% successes; additional descriptive metric only."
+  }
+}

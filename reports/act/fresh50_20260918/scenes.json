@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "task": "pusht",
+  "split": "review",
+  "generation_seed": 2026091801,
+  "generator": "mini_wam.studio.pusht.random_scene",
+  "environment_version": "0.1.6",
+  "count": 50,
+  "scenes_hash": "56724b01589f0730bade445ae3cd937afb20b895dcf79cdd830e4628662ec971",
+  "scenes": [
+    {
+      "scene_id": "act-review-000",
+      "environment_seed": 1895820736,
+      "state": {
+        "agent_x": 352.0,
+        "agent_y": 121.0,
+        "block_x": 290.0,
+        "block_y": 104.0,
+        "block_angle": 2.883124865979857
+      }
+    },
+    {
+      "scene_id": "act-review-001",
+      "environment_seed": 2077457867,
+      "state": {
+        "agent_x": 52.0,
+        "agent_y": 68.0,
+        "block_x": 238.0,
+        "block_y": 330.0,
+        "block_angle": -1.9676802074955988
+      }
+    },
+    {
+      "scene_id": "act-review-002",
+      "environment_seed": 1387475476,
+      "state": {
+        "agent_x": 318.0,
+        "agent_y": 316.0,
+        "block_x": 104.0,
+        "block_y": 263.0,
+        "block_angle": -1.7741337109489328
+      }
+    },
+    {
+      "scene_id": "act-review-003",
+      "environment_seed": 1178395058,
+      "state": {
+        "agent_x": 225.0,
+        "agent_y": 102.0,
+        "block_x": 390.0,
+        "block_y": 230.0,
+        "block_angle": -1.7870591423455906
+      }
+    },
+    {
+      "scene_id": "act-review-004",
+      "environment_seed": 130771854,
+      "state": {
+        "agent_x": 411.0,
+        "agent_y": 368.0,
+        "block_x": 164.0,
+        "block_y": 379.0,
+        "block_angle": -0.2548662786157263
+      }
+    },
+    {
+      "scene_id": "act-review-005",
+      "environment_seed": 1248601064,
+      "state": {
+        "agent_x": 220.0,
+        "agent_y": 430.0,
+        "block_x": 120.0,
+        "block_y": 118.0,
+        "block_angle": 0.07540770763679205
+      }
+    },
+    {
+      "scene_id": "act-review-006",
+      "environment_seed": 151654494,
+      "state": {
+        "agent_x": 78.0,
+        "agent_y": 325.0,
+        "block_x": 224.0,
+        "block_y": 230.0,
+        "block_angle": 0.4489852319540608
+      }
+    },
+    {
+      "scene_id": "act-review-007",
+      "environment_seed": 1227756520,
+      "state": {
+        "agent_x": 80.0,
+        "agent_y": 116.0,
+        "block_x": 141.0,
+        "block_y": 388.0,
+        "block_angle": 1.8063716557863039
+      }
+    },
+    {
+      "scene_id": "act-review-008",
+      "environment_seed": 289549218,
+      "state": {
+        "agent_x": 356.0,
+        "agent_y": 303.0,
+        "block_x": 158.0,
+        "block_y": 361.0,
+        "block_angle": 2.6326081383637234
+      }
+    },
+    {
+      "scene_id": "act-review-009",
+      "environment_seed": 1270031553,
+      "state": {
+        "agent_x": 374.0,
+        "agent_y": 359.0,
+        "block_x": 297.0,
+        "block_y": 307.0,
+        "block_angle": -2.8485808971185325
+      }
+    },
+    {
+      "scene_id": "act-review-010",
+      "environment_seed": 1285312200,
+      "state": {
+        "agent_x": 317.0,
+        "agent_y": 294.0,
+        "block_x": 394.0,
+        "block_y": 379.0,
+        "block_angle": -0.07846685166872458
+      }
+    },
+    {
+      "scene_id": "act-review-011",
+      "environment_seed": 1020935418,
+      "state": {
+        "agent_x": 253.0,
+        "agent_y": 240.0,
+        "block_x": 300.0,
+        "block_y": 209.0,
+        "block_angle": 1.061458695923963
+      }
+    },
+    {
+      "scene_id": "act-review-012",
+      "environment_seed": 2078630907,
+      "state": {
+        "agent_x": 326.0,
+        "agent_y": 241.0,
+        "block_x": 221.0,
+        "block_y": 200.0,
+        "block_angle": -1.7038224819382302
+      }
+    },
+    {
+      "scene_id": "act-review-013",
+      "environment_seed": 1698512322,
+      "state": {
+        "agent_x": 366.0,
+        "agent_y": 159.0,
+        "block_x": 303.0,
+        "block_y": 207.0,
+        "block_angle": 2.568872117837085
+      }
+    },
+    {
+      "scene_id": "act-review-014",
+      "environment_seed": 521124457,
+      "state": {
+        "agent_x": 175.0,
+        "agent_y": 186.0,
+        "block_x": 101.0,
+        "block_y": 360.0,
+        "block_angle": -2.8625179514665526
+      }
+    },
+    {
+      "scene_id": "act-review-015",
+      "environment_seed": 2055943996,
+      "state": {
+        "agent_x": 221.0,
+        "agent_y": 57.0,
+        "block_x": 104.0,
+        "block_y": 381.0,
+        "block_angle": 1.329662880582001
+      }
+    },
+    {
+      "scene_id": "act-review-016",
+      "environment_seed": 1928715917,
+      "state": {
+        "agent_x": 360.0,
+        "agent_y": 83.0,
+        "block_x": 265.0,
+        "block_y": 133.0,
+        "block_angle": -3.0659623750421248
+      }
+    },
+    {
+      "scene_id": "act-review-017",
+      "environment_seed": 1663457050,
+      "state": {
+        "agent_x": 55.0,
+        "agent_y": 251.0,
+        "block_x": 156.0,
+        "block_y": 317.0,
+        "block_angle": 2.7692282140702327
+      }
+    },
+    {
+      "scene_id": "act-review-018",
+      "environment_seed": 846135511,
+      "state": {
+        "agent_x": 135.0,
+        "agent_y": 348.0,
+        "block_x": 190.0,
+        "block_y": 386.0,
+        "block_angle": -1.594052388119465
+      }
+    },
+    {
+      "scene_id": "act-review-019",
+      "environment_seed": 874809835,
+      "state": {
+        "agent_x": 190.0,
+        "agent_y": 179.0,
+        "block_x": 145.0,
+        "block_y": 340.0,
+        "block_angle": -1.3621688757997508
+      }
+    },
+    {
+      "scene_id": "act-review-020",
+      "environment_seed": 1920192043,
+      "state": {
+        "agent_x": 94.0,
+        "agent_y": 380.0,
+        "block_x": 248.0,
+        "block_y": 323.0,
+        "block_angle": 2.9382298060158227
+      }
+    },
+    {
+      "scene_id": "act-review-021",
+      "environment_seed": 767777220,
+      "state": {
+        "agent_x": 270.0,
+        "agent_y": 167.0,
+        "block_x": 131.0,
+        "block_y": 287.0,
+        "block_angle": -1.8034924388857236
+      }
+    },
+    {
+      "scene_id": "act-review-022",
+      "environment_seed": 120482626,
+      "state": {
+        "agent_x": 101.0,
+        "agent_y": 388.0,
+        "block_x": 172.0,
+        "block_y": 313.0,
+        "block_angle": -1.9663226612322107
+      }
+    },
+    {
+      "scene_id": "act-review-023",
+      "environment_seed": 245637698,
+      "state": {
+        "agent_x": 337.0,
+        "agent_y": 146.0,
+        "block_x": 106.0,
+        "block_y": 392.0,
+        "block_angle": -1.6553844459087332
+      }
+    },
+    {
+      "scene_id": "act-review-024",
+      "environment_seed": 1685401140,
+      "state": {
+        "agent_x": 281.0,
+        "agent_y": 441.0,
+        "block_x": 111.0,
+        "block_y": 169.0,
+        "block_angle": 1.907851587811825
+      }
+    },
+    {
+      "scene_id": "act-review-025",
+      "environment_seed": 943633367,
+      "state": {
+        "agent_x": 407.0,
+        "agent_y": 206.0,
+        "block_x": 283.0,
+        "block_y": 388.0,
+        "block_angle": 1.2752450682211611
+      }
+    },
+    {
+      "scene_id": "act-review-026",
+      "environment_seed": 1860090290,
+      "state": {
+        "agent_x": 99.0,
+        "agent_y": 151.0,
+        "block_x": 279.0,
+        "block_y": 328.0,
+        "block_angle": 0.198702600929217
+      }
+    },
+    {
+      "scene_id": "act-review-027",
+      "environment_seed": 268656694,
+      "state": {
+        "agent_x": 91.0,
+        "agent_y": 100.0,
+        "block_x": 331.0,
+        "block_y": 313.0,
+        "block_angle": 1.8233375213771312
+      }
+    },
+    {
+      "scene_id": "act-review-028",
+      "environment_seed": 1907680819,
+      "state": {
+        "agent_x": 215.0,
+        "agent_y": 305.0,
+        "block_x": 102.0,
+        "block_y": 148.0,
+        "block_angle": 1.8403401182134145
+      }
+    },
+    {
+      "scene_id": "act-review-029",
+      "environment_seed": 1256468456,
+      "state": {
+        "agent_x": 85.0,
+        "agent_y": 131.0,
+        "block_x": 317.0,
+        "block_y": 196.0,
+        "block_angle": -2.4918374501464657
+      }
+    },
+    {
+      "scene_id": "act-review-030",
+      "environment_seed": 597427694,
+      "state": {
+        "agent_x": 130.0,
+        "agent_y": 429.0,
+        "block_x": 241.0,
+        "block_y": 150.0,
+        "block_angle": -3.102585651238613
+      }
+    },
+    {
+      "scene_id": "act-review-031",
+      "environment_seed": 329945082,
+      "state": {
+        "agent_x": 241.0,
+        "agent_y": 355.0,
+        "block_x": 251.0,
+        "block_y": 104.0,
+        "block_angle": -2.0367385094996147
+      }
+    },
+    {
+      "scene_id": "act-review-032",
+      "environment_seed": 132484286,
+      "state": {
+        "agent_x": 356.0,
+        "agent_y": 211.0,
+        "block_x": 394.0,
+        "block_y": 279.0,
+        "block_angle": 1.3777091013881986
+      }
+    },
+    {
+      "scene_id": "act-review-033",
+      "environment_seed": 1115728452,
+      "state": {
+        "agent_x": 105.0,
+        "agent_y": 293.0,
+        "block_x": 155.0,
+        "block_y": 147.0,
+        "block_angle": 0.6804181540468104
+      }
+    },
+    {
+      "scene_id": "act-review-034",
+      "environment_seed": 427230268,
+      "state": {
+        "agent_x": 408.0,
+        "agent_y": 155.0,
+        "block_x": 169.0,
+        "block_y": 223.0,
+        "block_angle": 0.4053305102205216
+      }
+    },
+    {
+      "scene_id": "act-review-035",
+      "environment_seed": 762854569,
+      "state": {
+        "agent_x": 135.0,
+        "agent_y": 412.0,
+        "block_x": 202.0,
+        "block_y": 206.0,
+        "block_angle": 3.099753948474892
+      }
+    },
+    {
+      "scene_id": "act-review-036",
+      "environment_seed": 354430773,
+      "state": {
+        "agent_x": 354.0,
+        "agent_y": 200.0,
+        "block_x": 207.0,
+        "block_y": 146.0,
+        "block_angle": -1.6151607040437617
+      }
+    },
+    {
+      "scene_id": "act-review-037",
+      "environment_seed": 274590355,
+      "state": {
+        "agent_x": 308.0,
+        "agent_y": 316.0,
+        "block_x": 112.0,
+        "block_y": 101.0,
+        "block_angle": -2.0424064614834516
+      }
+    },
+    {
+      "scene_id": "act-review-038",
+      "environment_seed": 252283498,
+      "state": {
+        "agent_x": 213.0,
+        "agent_y": 59.0,
+        "block_x": 122.0,
+        "block_y": 155.0,
+        "block_angle": 0.2534306817894305
+      }
+    },
+    {
+      "scene_id": "act-review-039",
+      "environment_seed": 1460038172,
+      "state": {
+        "agent_x": 264.0,
+        "agent_y": 273.0,
+        "block_x": 180.0,
+        "block_y": 236.0,
+        "block_angle": -0.8593656321240641
+      }
+    },
+    {
+      "scene_id": "act-review-040",
+      "environment_seed": 446895500,
+      "state": {
+        "agent_x": 164.0,
+        "agent_y": 409.0,
+        "block_x": 313.0,
+        "block_y": 264.0,
+        "block_angle": 0.8631457688990345
+      }
+    },
+    {
+      "scene_id": "act-review-041",
+      "environment_seed": 1834272064,
+      "state": {
+        "agent_x": 367.0,
+        "agent_y": 157.0,
+        "block_x": 384.0,
+        "block_y": 392.0,
+        "block_angle": -1.7401674879970834
+      }
+    },
+    {
+      "scene_id": "act-review-042",
+      "environment_seed": 315951184,
+      "state": {
+        "agent_x": 264.0,
+        "agent_y": 387.0,
+        "block_x": 230.0,
+        "block_y": 134.0,
+        "block_angle": -1.6194944577328687
+      }
+    },
+    {
+      "scene_id": "act-review-043",
+      "environment_seed": 1289238206,
+      "state": {
+        "agent_x": 287.0,
+        "agent_y": 234.0,
+        "block_x": 300.0,
+        "block_y": 379.0,
+        "block_angle": -1.9212874134976723
+      }
+    },
+    {
+      "scene_id": "act-review-044",
+      "environment_seed": 840213459,
+      "state": {
+        "agent_x": 410.0,
+        "agent_y": 199.0,
+        "block_x": 175.0,
+        "block_y": 239.0,
+        "block_angle": -0.8230462276230668
+      }
+    },
+    {
+      "scene_id": "act-review-045",
+      "environment_seed": 1664068649,
+      "state": {
+        "agent_x": 413.0,
+        "agent_y": 154.0,
+        "block_x": 258.0,
+        "block_y": 226.0,
+        "block_angle": 0.13951896573667177
+      }
+    },
+    {
+      "scene_id": "act-review-046",
+      "environment_seed": 436382411,
+      "state": {
+        "agent_x": 236.0,
+        "agent_y": 315.0,
+        "block_x": 278.0,
+        "block_y": 372.0,
+        "block_angle": -3.006664889223607
+      }
+    },
+    {
+      "scene_id": "act-review-047",
+      "environment_seed": 358554865,
+      "state": {
+        "agent_x": 333.0,
+        "agent_y": 253.0,
+        "block_x": 262.0,
+        "block_y": 264.0,
+        "block_angle": 0.21331323251112
+      }
+    },
+    {
+      "scene_id": "act-review-048",
+      "environment_seed": 344310330,
+      "state": {
+        "agent_x": 269.0,
+        "agent_y": 213.0,
+        "block_x": 116.0,
+        "block_y": 269.0,
+        "block_angle": -0.762029009684297
+      }
+    },
+    {
+      "scene_id": "act-review-049",
+      "environment_seed": 1696090653,
+      "state": {
+        "agent_x": 191.0,
+        "agent_y": 376.0,
+        "block_x": 325.0,
+        "block_y": 231.0,
+        "block_angle": 0.0913078019178708
+      }
+    }
+  ]
+}

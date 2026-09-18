@@ -1,3 +1,7 @@
+# 当前发布状态（2026-09-18）
+
+40,000 步正式训练已完成，原开发选点为 30,000 步。下面保留云端运行与恢复说明；发布成绩和 87% 阈值见 [首页](README.md)，训练证据见 [报告](reports/act/RELEASE_REPORT.md)。
+
 # ACT Push-T on Colab
 
 The September 17 run is active on NVIDIA L4. Source revision: `53dddff105b664612bedcf150cbc1f1fd2542bb6`.

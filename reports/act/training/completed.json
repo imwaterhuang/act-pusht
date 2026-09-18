@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "step": 40000,
+  "checkpoint": "checkpoints/last.pt",
+  "checkpoint_sha256": "0445321ebb8bebb6a3e9023d6426ee366b375356d9cd7cd3f36feea57ecd2ac8",
+  "elapsed_seconds": 3606.8034591970004
+}
