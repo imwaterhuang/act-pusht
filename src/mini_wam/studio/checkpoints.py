@@ -1,4 +1,4 @@
-"""Safe checkpoint discovery and loading for ActionOnlyPolicy."""
+"""Safe checkpoint discovery and loading for legacy and ACT policies."""
 
 from __future__ import annotations
 
@@ -17,6 +17,30 @@ from mini_wam.models.action_only import ActionOnlyPolicy
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 MODEL_IMPORT_ROOT = PROJECT_ROOT / "artifacts" / "studio" / "models"
 ARCHITECTURE_ID = "action_only_v1"
+ACT_AUDIT_PATH = PROJECT_ROOT / "artifacts" / "act" / "data_audit.json"
+
+
+class ACTStudioAdapter(torch.nn.Module):
+    """Use the current observation from the workbench's two-frame history."""
+
+    architecture_id = "act_v1"
+
+    def __init__(self, policy: torch.nn.Module) -> None:
+        super().__init__()
+        self.policy = policy
+
+    def forward(self, images: torch.Tensor, positions: torch.Tensor) -> torch.Tensor:
+        return self.policy(images[:, -1], positions[:, -1])
+
+
+def _load_act(path: Path, device: str | torch.device = "cpu"):
+    # Import lazily: the evaluator also imports the studio environment helpers.
+    from mini_wam.evaluation.act import load_act_checkpoint
+
+    try:
+        return load_act_checkpoint(path, ACT_AUDIT_PATH, torch.device(device))
+    except (ValueError, KeyError, TypeError, RuntimeError, OSError) as exc:
+        raise CheckpointValidationError(f"ACT 检查点不兼容：{exc}") from exc
 
 
 class CheckpointValidationError(ValueError):
@@ -103,6 +127,13 @@ def _validate_metadata(payload: dict[str, Any]) -> tuple[str, str | None, bool]:
 def inspect_checkpoint(path: str | Path) -> CheckpointInfo:
     path = Path(path).expanduser().resolve()
     payload = _safe_payload(path)
+    if isinstance(payload.get("metadata"), dict) and payload["metadata"].get("architecture") == "act_v1":
+        _load_act(path)
+        return CheckpointInfo(
+            name=path.name, path=path, status="可执行", architecture="act_v1",
+            step=int(payload["step"]), validation_loss=None,
+            dataset_fingerprint=payload["metadata"].get("dataset_fingerprint"), legacy=False,
+        )
     state = _state_dict(payload)
     expected = ActionOnlyPolicy(pretrained=False).state_dict()
     missing = sorted(expected.keys() - state.keys())
@@ -136,8 +167,11 @@ def inspect_checkpoint(path: str | Path) -> CheckpointInfo:
     )
 
 
-def load_checkpoint(path: str | Path, device: str | torch.device = "cpu") -> tuple[ActionOnlyPolicy, CheckpointInfo]:
+def load_checkpoint(path: str | Path, device: str | torch.device = "cpu") -> tuple[torch.nn.Module, CheckpointInfo]:
     info = inspect_checkpoint(path)
+    if info.architecture == "act_v1":
+        policy, _, _ = _load_act(info.path, device)
+        return ACTStudioAdapter(policy).eval(), info
     payload = _safe_payload(info.path)
     model = ActionOnlyPolicy(pretrained=False)
     model.load_state_dict(_state_dict(payload), strict=True)
@@ -153,6 +187,11 @@ def checkpoint_normalization(
 ) -> NormalizationStats:
     """Use bundle statistics, or the active dataset for current legacy files."""
     payload = _safe_payload(Path(path).expanduser().resolve())
+    if isinstance(payload.get("metadata"), dict) and payload["metadata"].get("architecture") == "act_v1":
+        if legacy_dataset_fingerprint and active_dataset_fingerprint != legacy_dataset_fingerprint:
+            raise CheckpointValidationError("当前 ACT 检查点使用项目内置数据审计，请先切回内置数据")
+        _, normalization, _ = _load_act(Path(path).expanduser().resolve())
+        return normalization
     _, fingerprint, legacy = _validate_metadata(payload)
     if legacy:
         if legacy_dataset_fingerprint and active_dataset_fingerprint != legacy_dataset_fingerprint:

@@ -1,0 +1,5 @@
+-r requirements-colab.txt
+fastapi==0.141.1
+uvicorn==0.52.4
+websockets>=15,<17
+av==15.1.0

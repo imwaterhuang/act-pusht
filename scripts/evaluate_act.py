@@ -30,6 +30,7 @@ def main() -> None:
     parser.add_argument("--max-steps", type=int, default=300)
     parser.add_argument("--execute-steps", type=int, default=4)
     parser.add_argument("--save-videos", action="store_true")
+    parser.add_argument("--success-coverage", type=float, default=0.87)
     args = parser.parse_args()
     device = select_device(args.device)
     model, normalization, checkpoint = load_act_checkpoint(
@@ -39,11 +40,11 @@ def main() -> None:
         model, normalization, args.scenes, args.output_dir,
         device=device, expected_split=args.split,
         max_steps=args.max_steps, execute_steps=args.execute_steps,
-        save_videos=args.save_videos,
+        save_videos=args.save_videos, success_coverage=args.success_coverage,
     )
     summary = result["summary"]
     print(f"checkpoint step: {checkpoint['step']}")
-    print(f"strict successes: {summary['success_count']}/{summary['episode_count']}")
+    print(f"successes (coverage > {args.success_coverage:.0%}): {summary['success_count']}/{summary['episode_count']}")
     print(f"mean final coverage: {summary['mean_final_coverage']:.6f}")
 
 

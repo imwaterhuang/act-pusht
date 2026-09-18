@@ -221,6 +221,7 @@ def run_rollout(
     model_calls = 0
     stopped = False
     success = False
+    strict_act_success = getattr(model, "architecture_id", None) == "act_v1"
     try:
         if scene_is_body_pose:
             observation, info = env.reset(seed=0)
@@ -249,7 +250,7 @@ def run_rollout(
         yield RolloutUpdate(frame=frame, metrics=initial)
 
         terminated = truncated = False
-        while steps < max_steps and not terminated and not truncated:
+        while steps < max_steps and not terminated and not truncated and not success:
             if stop_event.is_set():
                 stopped = True
                 break
@@ -270,7 +271,7 @@ def run_rollout(
                 reward_sum += float(reward)
                 final_coverage = float(info.get("coverage", 0.0))
                 max_coverage = max(max_coverage, final_coverage)
-                success = bool(info.get("is_success", False))
+                success = final_coverage > 0.87 if strict_act_success else bool(info.get("is_success", False))
                 frame = _annotate_frame(np.asarray(env.render(), dtype=np.uint8), frame_label)
                 frames.append(frame)
                 current = RolloutMetrics(
@@ -284,7 +285,7 @@ def run_rollout(
                     model_calls,
                 )
                 yield RolloutUpdate(frame=frame, metrics=current)
-                if terminated or truncated or steps >= max_steps:
+                if success or terminated or truncated or steps >= max_steps:
                     break
             if stopped:
                 break

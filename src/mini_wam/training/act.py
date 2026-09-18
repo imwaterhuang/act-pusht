@@ -264,6 +264,8 @@ def train_act(
                     run_path / "evaluation" / f"step_{step:07d}",
                     device=device, max_steps=evaluation["max_steps"],
                     execute_steps=evaluation["execute_steps"],
+                    # Preserve the original training checkpoint-selection protocol.
+                    success_coverage=evaluation.get("success_coverage", 0.95),
                 )
             finally:
                 restore_random_states(random_states)

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Push-T · 实时拖动</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f5f2;color:#202a2a;font:15px system-ui,-apple-system,sans-serif}main{max-width:1060px;margin:28px auto;padding:0 24px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}h1{font-size:25px;margin:0 0 8px}p{line-height:1.6;color:#5b6765}.tag{font-size:12px;color:#17684a;background:#e0efe6;padding:8px 12px;border-radius:20px;white-space:nowrap}.layout{display:grid;grid-template-columns:minmax(280px,640px) 240px;gap:24px;margin-top:24px}canvas{display:block;width:100%;height:auto;border-radius:16px;border:1px solid #d7deda;background:white;touch-action:none;cursor:grab}canvas.dragging{cursor:grabbing}aside{background:white;border:1px solid #dce2de;border-radius:16px;padding:24px;align-self:start}.big{font-size:42px;font-weight:650;letter-spacing:-1px;margin:8px 0 20px}.label{font-size:13px;color:#65736d}.value{font-size:19px;margin:6px 0 20px}button{font:inherit;border:1px solid #cbd6d0;border-radius:9px;padding:12px;width:100%;margin-top:12px;background:white;cursor:pointer}button.primary{background:#17684a;color:white;border-color:#17684a}button:disabled{opacity:.5;cursor:wait}a{color:#17684a}#status{min-height:24px;font-weight:600}small{display:block;color:#68756e;line-height:1.6;margin-top:18px}@media(max-width:700px){.layout{grid-template-columns:1fr}aside{display:block}header{align-items:start}.tag{display:none}main{margin:18px auto;padding:0 14px}}
+</style>
+<main>
+<header><div><h1>推一推，也挪一挪。</h1><p>按住灰色 T 块拖动，松手后继续看模型推回目标。</p></div><span class="tag">ACT · 30,000 步</span></header>
+<div class="layout"><canvas id="world" width="512" height="512" aria-label="实时 Push-T 画布，拖动灰色 T 块"></canvas>
+<aside><div id="status" role="status">正在载入模型…</div><div class="label">当前覆盖率</div><div class="big" id="coverage">—</div><div class="label">持续运行步数</div><div class="value" id="steps">0</div><div class="label">已响应拖动</div><div class="value" id="moves">0</div><button class="primary" id="pause" disabled>暂停模型</button><button id="reset" disabled>换一个随机场景</button><small>模型持续运行，超过 300 步或达到目标后都不停。拖动时立即重新观察，不重置整个场景。</small><small>ACT（Action Chunking with Transformers）<br>绿色区域是固定目标。</small><p><a href="/" target="_top">返回模型工作台</a></p></aside></div>
+<p id="hint">正在连接本地仿真…</p>
+</main>
+<script>
+const canvas=document.getElementById('world'),ctx=canvas.getContext('2d');
+const status=document.getElementById('status'),pause=document.getElementById('pause'),reset=document.getElementById('reset'),hint=document.getElementById('hint');
+let state=null,dragging=false,offset=[0,0],lastPoint=null,queued=null,sending=false,frameVersion=0;
+const socket=new WebSocket(`${location.protocol==='https:'?'wss':'ws'}://${location.host}/live/ws`);
+function send(data){if(socket.readyState===WebSocket.OPEN)socket.send(JSON.stringify(data))}
+function position(e){const r=canvas.getBoundingClientRect();return [(e.clientX-r.left)*512/r.width,(e.clientY-r.top)*512/r.height]}
+function inside(p,poly){let hit=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){let a=poly[i],b=poly[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])hit=!hit}return hit}
+function move(p,held){lastPoint=p;queued={type:'drag',x:p[0]-offset[0],y:p[1]-offset[1],held};if(!sending){sending=true;requestAnimationFrame(()=>{if(queued)send(queued);queued=null;sending=false})}}
+canvas.addEventListener('pointerdown',e=>{if(!state)return;const p=position(e);if(!state.polygons.some(poly=>inside(p,poly)))return;e.preventDefault();dragging=true;offset=[p[0]-state.block[0],p[1]-state.block[1]];canvas.classList.add('dragging');canvas.setPointerCapture(e.pointerId);move(p,true)});
+canvas.addEventListener('pointermove',e=>{if(dragging){e.preventDefault();move(position(e),true)}});
+function endDrag(e){if(!dragging)return;dragging=false;canvas.classList.remove('dragging');move(e?position(e):lastPoint,false)}
+canvas.addEventListener('pointerup',endDrag);canvas.addEventListener('pointercancel',()=>endDrag());window.addEventListener('blur',()=>endDrag());
+pause.onclick=()=>{if(state)send({type:'pause',value:!state.paused})};reset.onclick=()=>{endDrag();send({type:'reset'})};
+socket.onmessage=event=>{const next=JSON.parse(event.data);if(next.type==='error'){status.textContent='运行出错';hint.textContent=next.message;return}state=next;const version=++frameVersion;const picture=new Image();picture.onload=()=>{if(version!==frameVersion)return;ctx.drawImage(picture,0,0,512,512)};picture.src='data:image/jpeg;base64,'+next.image;document.getElementById('coverage').textContent=(next.coverage*100).toFixed(1)+'%';document.getElementById('steps').textContent=next.steps;document.getElementById('moves').textContent=next.moves;status.textContent=next.paused?'已暂停 · 仍可拖动':next.coverage>.87?'已到达目标 · 继续运行':'模型持续运行中';pause.textContent=next.paused?'继续运行':'暂停模型';pause.disabled=reset.disabled=false;hint.textContent=`场景种子 ${next.seed} · 拖动灰色 T 块即可干预 · 每秒约 10 个环境步`};
+socket.onclose=()=>{status.textContent='连接已断开';hint.textContent='刷新页面可重新连接。';pause.disabled=reset.disabled=true};window.addEventListener('pagehide',()=>socket.close());
+</script>
+</html>

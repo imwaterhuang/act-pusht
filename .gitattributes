@@ -1,0 +1,5 @@
+# Preserve original experiment bytes and keep generated evidence out of code diffs.
+reports/act/fresh50_20260918/** -text -diff linguist-generated=true
+reports/act/training/train_metrics.csv -text -diff linguist-generated=true
+reports/act/release87/*.json linguist-generated=true
+docs/media/** -text -diff linguist-generated=true

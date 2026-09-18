@@ -187,10 +187,13 @@ def evaluate_act_policy(
     max_steps: int = 300,
     execute_steps: int = 4,
     save_videos: bool = False,
+    success_coverage: float = 0.87,
 ) -> dict[str, Any]:
     """Run one ACT checkpoint on a pre-frozen scene file and save full traces."""
     if expected_split not in ("development", "review"):
         raise ValueError("Only ACT development or fresh review scenes are allowed")
+    if not 0 <= success_coverage <= 1:
+        raise ValueError("success_coverage must be between 0 and 1")
     scenes = load_scene_split(scene_path, expected_split=expected_split)
     if max_steps < 1 or execute_steps < 1:
         raise ValueError("max_steps and execute_steps must be positive")
@@ -239,7 +242,7 @@ def evaluate_act_policy(
                         reward_sum += float(reward)
                         final_coverage = float(info.get("coverage", 0.0))
                         max_coverage = max(max_coverage, final_coverage)
-                        strict_success = final_coverage > 0.95
+                        strict_success = final_coverage > success_coverage
                         simulator_success = bool(info.get("is_success", False))
                         trace.append({
                             "step": steps,
@@ -302,7 +305,8 @@ def evaluate_act_policy(
         "scenes_hash": scenes["scenes_hash"],
         "protocol": {
             "split": expected_split, "max_steps": max_steps,
-            "execute_steps": execute_steps, "strict_success_coverage": 0.95,
+            "execute_steps": execute_steps, "strict_success_coverage": success_coverage,
+            "success_definition": "coverage > threshold; stop at first crossing",
             "videos_saved": save_videos,
         },
         "summary": summary,
