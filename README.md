@@ -17,15 +17,15 @@ ACT（Action Chunking with Transformers，基于 Transformer 的动作分块）�
 <th>成功 · 场景 000</th><th>成功 · 场景 014</th><th>成功 · 场景 038</th>
 </tr>
 <tr>
-<td><a href="docs/media/success-act-review-000.mp4"><img src="docs/media/success-act-review-000.gif" width="260" alt="成功场景 000：点击播放视频"></a></td>
-<td><a href="docs/media/success-act-review-014.mp4"><img src="docs/media/success-act-review-014.gif" width="260" alt="成功场景 014：首次超过 87% 后停止"></a></td>
-<td><a href="docs/media/success-act-review-038.mp4"><img src="docs/media/success-act-review-038.gif" width="260" alt="成功场景 038：点击播放视频"></a></td>
+<td><a href="docs/media/success-act-review-000.mp4"><img src="docs/media/success-act-review-000.gif" width="220" alt="成功场景 000：点击播放视频"></a></td>
+<td><a href="docs/media/success-act-review-014.mp4"><img src="docs/media/success-act-review-014.gif" width="220" alt="成功场景 014：首次超过 87% 后停止"></a></td>
+<td><a href="docs/media/success-act-review-038.mp4"><img src="docs/media/success-act-review-038.gif" width="220" alt="成功场景 038：点击播放视频"></a></td>
 </tr>
 <tr><td>原轨迹也达到 &gt;95%</td><td>达到 &gt;87%，但原轨迹结束时回落到 85.2%</td><td>较短的成功轨迹</td></tr>
 <tr><th>失败 · 场景 003</th><th>失败 · 场景 004</th><th>可追溯的演示</th></tr>
 <tr>
-<td><a href="docs/media/failure-act-review-003.mp4"><img src="docs/media/failure-act-review-003.gif" width="260" alt="失败场景 003：接近目标但未达到 87%"></a></td>
-<td><a href="docs/media/failure-act-review-004.mp4"><img src="docs/media/failure-act-review-004.gif" width="260" alt="失败场景 004：始终没有覆盖目标"></a></td>
+<td><a href="docs/media/failure-act-review-003.mp4"><img src="docs/media/failure-act-review-003.gif" width="220" alt="失败场景 003：接近目标但未达到 87%"></a></td>
+<td><a href="docs/media/failure-act-review-004.mp4"><img src="docs/media/failure-act-review-004.gif" width="220" alt="失败场景 004：始终没有覆盖目标"></a></td>
 <td>固定场景编号与种子<br>检查点：30,000 步<br>逐步覆盖率校验<br>3 段成功 + 2 段失败<br><a href="reports/act/release87/videos.json">视频证据清单</a></td>
 </tr>
 <tr><td>最高覆盖率 82.8%</td><td>最高覆盖率 0%</td><td>示例用于解释行为，不代替全量评测</td></tr>
