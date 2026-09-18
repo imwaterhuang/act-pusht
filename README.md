@@ -8,6 +8,16 @@ ACT（Action Chunking with Transformers，基于 Transformer 的动作分块）�
 
 训练已完成 **40,000 步**。展示使用原开发场景选出的 **30,000 步检查点**。发布指标是对保存的全部评测轨迹按新阈值重算，**并非重新训练后取得的提升**。
 
+## 架构概览
+
+**动作预测主干：** ResNet-18（Residual Network，残差网络）从当前图像提取空间特征，与当前位置和潜变量一起送入 Transformer 编码器；16 个可学习动作查询通过解码器读取观测特征，一次预测 16 步二维目标坐标。执行前 4 步，再观察并重新规划。
+
+**仅训练使用的潜变量分支：** CVAE（Conditional Variational Autoencoder，条件变分自编码器）根据当前位置与专家动作推断潜变量分布，用采样的 `z` 辅助动作重建，并施加 KL（Kullback–Leibler）正则。推理时移除专家动作输入，固定 `z=0`；尾部填充动作在注意力和重建损失中屏蔽。
+
+<a href="docs/media/act-architecture.png"><img src="docs/media/act-architecture.png" width="1000" alt="ACT 架构图：左侧动作预测主干，右侧仅训练使用的条件变分潜变量分支"></a>
+
+<sub>图为早期设计原图，底部“尚未实现、参数未定”的状态文字已过时：当前模型已实现并完成训练，宽度 256、8 个注意力头、主干与后验编码器各 4 层、潜变量维度 32、正则权重 10。图中位置投影在代码中为两层网络，后验均值与对数方差由同一线性投影输出后拆分；其余以当前代码为准。</sub>
+
 ## 成功与失败视频
 
 下列视频重放模型真实输出的动作，逐步验证覆盖率与原评测记录一致。成功视频在首次超过 87% 时停止；失败视频保留完整 300 步。动态预览按实际时间播放，点击预览打开视频文件。
@@ -47,46 +57,6 @@ GitHub 会过滤普通 HTML（HyperText Markup Language，超文本标记语言�
 
 详见 [发布实验报告](reports/act/RELEASE_REPORT.md)、[87% 重算结果](reports/act/release87/summary.json)、[原始评测](reports/act/fresh50_20260918/REPORT.md)。原轨迹结束覆盖率不等同于按 87% 提前停止后的覆盖率。
 
-## 快速运行
-
-建议使用 Python 3.12。在已配置 PyTorch 的 Colab 环境中，不必重建环境。
-
-```bash
-git clone https://github.com/imwaterhuang/act-pusht.git
-cd act-pusht
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-demo.txt
-python -m pip install -e . --no-deps
-```
-
-### 下载已训练模型并交互体验
-
-模型存放在 [v0.1.0 Release](https://github.com/imwaterhuang/act-pusht/releases/tag/v0.1.0)，不放入代码历史。目前仓库为私有仓库，以下命令需要拥有仓库访问权限并登录 GitHub CLI（Command Line Interface，命令行界面）。
-
-```bash
-mkdir -p artifacts/studio/models
-gh release download v0.1.0 --repo imwaterhuang/act-pusht \
-  --pattern act_step_30000.pt --dir artifacts/studio/models
-python scripts/verify_release.py --checkpoint artifacts/studio/models/act_step_30000.pt
-python scripts/demo_act.py
-```
-
-打开 <http://127.0.0.1:7860/live>，可以拖动物体、暂停和重置。**交互模式允许持续运行和人工干预，不计入上表评测。** 演示只需模型，不需下载训练数据。
-
-### 评测与训练
-
-```bash
-python scripts/evaluate_act.py \
-  --checkpoint artifacts/studio/models/act_step_30000.pt \
-  --scenes reports/act/fresh50_20260918/scenes.json --split review \
-  --success-coverage 0.87 --output-dir outputs/review87 --device cpu
-```
-
-这是重新进行模型推理；不同设备和软件版本可能造成数值及轨迹差异。原论文或其他项目的指标不能直接与本项目的 87% 阈值比较。
-
-训练、恢复、原始 >95% 评测及不依赖模型的证据重建命令见 [复现指南](docs/GETTING_STARTED.md) 与 [Colab 指南](COLAB.md)。
-
 ## 训练过程
 
 <img src="docs/media/training-curves.png" width="1000" alt="动作重建损失、潜变量正则损失与原开发场景成功率">
@@ -107,18 +77,7 @@ python scripts/evaluate_act.py \
 
 `B` 为批大小。尾部填充不参加动作损失。全部示范用于训练，开发与复核来自独立生成的模拟场景。[接口规格](SPEC.md)记录模型与数据契约。
 
-```mermaid
-flowchart LR
-    I[当前图像] --> V[视觉特征]
-    P[当前位置] --> T[Transformer]
-    V --> T
-    Z[推理时 z=0] --> T
-    T --> A[预测 16 步动作]
-    A --> E[执行前 4 步]
-    E --> O[获取新观测]
-    O --> I
-    O --> P
-```
+
 
 ## 项目导航
 

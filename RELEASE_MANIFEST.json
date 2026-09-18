@@ -6,7 +6,7 @@
     "COLAB.md": "4d3a7ffe88c8f347ead7e24767f628dd73ec4405336d56db5c0b454b7c0d1917",
     "EVALUATION.md": "72eb6057eecbd0ba75be239d697fa38a85968a8ac00053723466b45f35843e11",
     "PROGRESS.md": "2e9d94c23b510388b405298cacfbd51478dc1924405c6d1a78a94e7d765ebc36",
-    "README.md": "fbcf88a7ca9fb739bcf2210e0a36c194b0c53e888c7b9aa0048d0040b9221439",
+    "README.md": "692bdaa924bc01fb74fe1feae3577801a5f4323cec787411b7d5a9ec3bb1211e",
     "SOURCE_MANIFEST.json": "d0f40689c578d22d83a25a72545d756e029e29c33b822d660a735323e66b5750",
     "SPEC.md": "59e424faa67204e01c50c0ba607d1ff676fb9eaf1ab8918f350fb1c9ce1e0a72",
     "artifacts/act/data_audit.json": "d84063bb281c13f522bc326546f59c80a4a4a3d12cedd95814274522c8748168",
@@ -122,6 +122,7 @@
     "tests/test_studio_act.py": "385fa91b67f6c9f816c518ddce567e13f1dad1c58cb1ca301a0769d109e1f1d8",
     "tests/test_studio_live.py": "18d3cc9007b09407ee9ee62b20786bd2f03982acd0970818efef78c7a9711c6c",
     "tests/test_success_threshold.py": "a53f46d77e79a85221d349de5a88b1d3d904cae87111c6aa93f43953a2fe6949",
-    ".gitattributes": "6478e23a53a5ab8d2d4316ac3bcfdb6857b86699065d93ec8ef8162e2ef6bf14"
+    ".gitattributes": "6478e23a53a5ab8d2d4316ac3bcfdb6857b86699065d93ec8ef8162e2ef6bf14",
+    "docs/media/act-architecture.png": "035e6600b1645a29e5d7aabbf4e8e8fa9634ef7c06a0cc243d4a652834d08da2"
   }
 }
