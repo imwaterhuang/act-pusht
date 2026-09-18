@@ -1,6 +1,6 @@
 # 复现指南
 
-所有命令从仓库根目录执行。安装与模型下载见 [首页](../README.md)。
+所有命令从仓库根目录执行。依赖清单为 `requirements-demo.txt`；推理权重见 [v0.1.0 Release](https://github.com/imwaterhuang/act-pusht/releases/tag/v0.1.0)。
 
 ## 无需训练：评测模型
 

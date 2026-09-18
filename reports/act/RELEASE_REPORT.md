@@ -67,4 +67,4 @@ e12c51f026eb19e56c3602aff14907ff55c0e8859606ef416bf150961bef0fb1
 
 ## 复现
 
-[首页](../../README.md)给出模型下载与快速评测；[完整指南](../../docs/GETTING_STARTED.md)给出训练、恢复、评测与证据重建命令。发布代码测试与真实权重验证见 [RELEASE_VERIFICATION.md](RELEASE_VERIFICATION.md)。
+[首页](../../README.md)展示架构、视频和结果；[完整指南](../../docs/GETTING_STARTED.md)给出训练、恢复、评测与证据重建命令。发布代码测试与真实权重验证见 [RELEASE_VERIFICATION.md](RELEASE_VERIFICATION.md)。
